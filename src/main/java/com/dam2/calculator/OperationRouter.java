@@ -1,5 +1,6 @@
 package com.dam2.calculator;
 
+import com.dam2.calculator.ops.OpMedia;
 import com.dam2.calculator.ops.OpResta;
 import com.dam2.calculator.ops.OpSuma;
 
@@ -17,6 +18,7 @@ public class OperationRouter {
         switch (op.trim().toLowerCase()) {
             case "suma": return OpSuma.run(input);
             case "resta": return OpResta.run(input);
+            case "media": return OpMedia.run(input);
 
             default: return "Operación no reconocida. Escribe 'help'.";
             
