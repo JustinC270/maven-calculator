@@ -1,5 +1,4 @@
 package com.dam2.calculator;
-
 import com.dam2.calculator.ops.OpDivision;
 import com.dam2.calculator.ops.OpResta;
 import com.dam2.calculator.ops.OpMaximo;
