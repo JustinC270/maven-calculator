@@ -17,13 +17,9 @@ public class OperationRouter {
     public static String run(String op, String input) {
         switch (op.trim().toLowerCase()) {
             case "suma": return OpSuma.run(input);
-
             case "resta": return OpResta.run(input);
             case "media": return OpMedia.run(input);
-
             case "division": return OpResta.run(input);
-
-
             default: return "Operación no reconocida. Escribe 'help'.";
             
            
