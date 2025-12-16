@@ -6,7 +6,7 @@ import com.dam2.calculator.ops.OpSuma;
 
 public class OperationRouter {
 
-    private static final String OPS_LINE = "Operaciones: suma, division";
+    private static final String OPS_LINE = "Operaciones: suma, division, media, maximo, multiplicacion, minima";
 
     public static String help() {
         return OPS_LINE + "\n" +
@@ -17,7 +17,8 @@ public class OperationRouter {
     public static String run(String op, String input) {
         switch (op.trim().toLowerCase()) {
             case "suma": return OpSuma.run(input);
-            case "division": return OpResta.run(input);
+            case "resta": return OpResta.run(input);
+            case "division": return OpDivision.run(input);
 
             default: return "Operación no reconocida. Escribe 'help'.";
             
@@ -25,3 +26,4 @@ public class OperationRouter {
         }
     }
 }
+
