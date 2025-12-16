@@ -23,6 +23,7 @@ public class OperationRouter {
     case "resta": return OpResta.run(input);
     case "maximo": return OpMaximo.run(input);
     case "division": return OpDivision.run(input);
+    case "media": return OpMedia.run(input);
     default: return "Operación no reconocida. Escribe 'help'.";
 }
 
