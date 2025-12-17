@@ -1,12 +1,21 @@
 package com.dam2.calculator;
+<<<<<<< HEAD
 
 import com.dam2.calculator.ops.OpMultiplicación;
+=======
+import com.dam2.calculator.ops.OpDivision;
+>>>>>>> main
 import com.dam2.calculator.ops.OpResta;
+import com.dam2.calculator.ops.OpMaximo;
 import com.dam2.calculator.ops.OpSuma;
-
+import com.dam2.calculator.ops.OpMedia;
 public class OperationRouter {
 
+<<<<<<< HEAD
     private static final String OPS_LINE = "Operaciones: suma, resta, multiplicacion";
+=======
+    private static final String OPS_LINE = "Operaciones: suma, division";
+>>>>>>> main
 
     public static String help() {
         return OPS_LINE + "\n" +
@@ -15,13 +24,29 @@ public class OperationRouter {
     }
 
     public static String run(String op, String input) {
+<<<<<<< HEAD
         switch (op.trim().toLowerCase()) {
             case "suma": return OpSuma.run(input);
             case "resta": return OpResta.run(input);
             case "multiplicacion": return OpMultiplicación.run(input);
             default: return "Operación no reconocida. Escribe 'help'.";
+=======
+
+            
+ 
+            switch (op.trim().toLowerCase()) {
+    case "suma": return OpSuma.run(input);
+    case "resta": return OpResta.run(input);
+    case "maximo": return OpMaximo.run(input);
+    case "division": return OpDivision.run(input);
+    case "media": return OpMedia.run(input);
+    default: return "Operación no reconocida. Escribe 'help'.";
+}
+
+
+>>>>>>> main
             
            
         }
     }
-}
+
